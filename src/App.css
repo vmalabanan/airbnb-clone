@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  height: 70px;
+  display: flex; /* This will effectively resize the giant logo. Because it is now a flex item, it will be automatically resized to fit within the boundaries of the flexbox (= nav height) */
+
+  padding: 20px 36px; /* This will also resize the giant logo, since the logo and the padding must fit within the boundaries of the flexbox */
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1); /* From Figma */
+}
+
+.nav--logo {
+  max-width: 100px; /* Fixes a problem in Safari where the logo is stretched the full width of the nav */
+}
